@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[720, 720]"/>
+    </Property>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,-48,0,0,2,-48"/>
+  </AuxValues>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+    <Property name="useNullLayout" type="boolean" value="true"/>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="imgLogo">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="2" name="C:\Users\alvis\Videos\aa\output-onlinepngtools (1).png"/>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="220" y="120" width="-1" height="130"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblLogo">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Corbel" size="14" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="DATABASE UTILITY"/>
+        <Property name="toolTipText" type="java.lang.String" value=""/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="228" y="256" width="270" height="-1"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="cmbTables">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Corbel" size="12" style="0"/>
+        </Property>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="25">
+            <StringItem index="0" value="Champions"/>
+            <StringItem index="1" value="Abilities"/>
+            <StringItem index="2" value="Skins"/>
+            <StringItem index="3" value="Items"/>
+            <StringItem index="4" value="Runes"/>
+            <StringItem index="5" value="Summoner Spells"/>
+            <StringItem index="6" value="Maps"/>
+            <StringItem index="7" value="Game Modes"/>
+            <StringItem index="8" value="Ability Cooldowns"/>
+            <StringItem index="9" value="Ability Costs"/>
+            <StringItem index="10" value="Ability Ranges"/>
+            <StringItem index="11" value="Ability Tags"/>
+            <StringItem index="12" value="Item Builds-From"/>
+            <StringItem index="13" value="Item Builds-Into"/>
+            <StringItem index="14" value="Item Colloqs"/>
+            <StringItem index="15" value="Item Stats"/>
+            <StringItem index="16" value="Rune Descriptions"/>
+            <StringItem index="17" value="Popular Items"/>
+            <StringItem index="18" value="Popular Runes"/>
+            <StringItem index="19" value="Popular Spells"/>
+            <StringItem index="20" value="Items Available"/>
+            <StringItem index="21" value="Runes Available"/>
+            <StringItem index="22" value="Spells Available"/>
+            <StringItem index="23" value="Ally Tips"/>
+            <StringItem index="24" value="Enemy Tips"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbTablesActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="350" y="360" width="230" height="28"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="cmbQueries">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Corbel" size="12" style="0"/>
+        </Property>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="13">
+            <StringItem index="0" value="Most popular build for a given champion"/>
+            <StringItem index="1" value="Most well-rounded champions within a class"/>
+            <StringItem index="2" value="Most versatile champions within a class"/>
+            <StringItem index="3" value="Champions who use a mana-alternative within a class"/>
+            <StringItem index="4" value="Champions by lowest basic ability cooldown in a class"/>
+            <StringItem index="5" value="Available champion skins by skinline"/>
+            <StringItem index="6" value="All legendary/mythic tier items"/>
+            <StringItem index="7" value="Most popular items to build a given item into"/>
+            <StringItem index="8" value="Champions at max level with the highest value for a stat"/>
+            <StringItem index="9" value="Items by their stat/cost efficiency given a stat"/>
+            <StringItem index="10" value="Most popular keystone runes within a class"/>
+            <StringItem index="11" value="Maps available given a game mode"/>
+            <StringItem index="12" value="Relevant ally/enemy tips given a champion"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbQueriesActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="350" y="360" width="310" height="28"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblSelect">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Corbel" size="14" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="11"/>
+        <Property name="text" type="java.lang.String" value="Select a table to return contents for: "/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="110" y="365" width="230" height="-1"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblSelectInput">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Corbel" size="14" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="11"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="110" y="427" width="230" height="20"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnOpen">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Corbel" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Get Results"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnOpenActionPerformed"/>
+      </Events>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="310" y="643" width="90" height="30"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnQueries">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Corbel" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Queries"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnQueriesActionPerformed"/>
+      </Events>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="620" y="643" width="80" height="30"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnTables">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Corbel" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Tables"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnTablesActionPerformed"/>
+      </Events>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="620" y="643" width="80" height="30"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="cmbClassSelect">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Corbel" size="12" style="0"/>
+        </Property>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="6">
+            <StringItem index="0" value="Assassins"/>
+            <StringItem index="1" value="Fighters"/>
+            <StringItem index="2" value="Mages"/>
+            <StringItem index="3" value="Marksmen"/>
+            <StringItem index="4" value="Supports"/>
+            <StringItem index="5" value="Tanks"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbClassSelectActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="350" y="420" width="100" height="28"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="cmbStatSelect">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Corbel" size="12" style="0"/>
+        </Property>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="11">
+            <StringItem index="0" value="&quot;HP&quot;"/>
+            <StringItem index="1" value="&quot;MP&quot;"/>
+            <StringItem index="2" value="&quot;HP Regen&quot;"/>
+            <StringItem index="3" value="&quot;Armor&quot;"/>
+            <StringItem index="4" value="&quot;Magic Resist&quot;"/>
+            <StringItem index="5" value="&quot;Crit&quot;"/>
+            <StringItem index="6" value="&quot;Ability Power&quot;"/>
+            <StringItem index="7" value="&quot;Attack Damage&quot;"/>
+            <StringItem index="8" value="&quot;Attack Speed&quot;"/>
+            <StringItem index="9" value="&quot;Life Steal&quot;"/>
+            <StringItem index="10" value="&quot;Move Speed&quot;"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbStatSelectActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="350" y="420" width="110" height="28"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="cmbItemStatSelect">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Corbel" size="12" style="0"/>
+        </Property>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="9">
+            <StringItem index="0" value="HP"/>
+            <StringItem index="1" value="MP"/>
+            <StringItem index="2" value="HP Regen"/>
+            <StringItem index="3" value="MP Regen"/>
+            <StringItem index="4" value="Armor"/>
+            <StringItem index="5" value="Magic Resist"/>
+            <StringItem index="6" value="Crit"/>
+            <StringItem index="7" value="Attack Damage"/>
+            <StringItem index="8" value="Attack Speed"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbItemStatSelectActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="350" y="420" width="110" height="28"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="cmbGameModeSelect">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Corbel" size="12" style="0"/>
+        </Property>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="6">
+            <StringItem index="0" value="Classic"/>
+            <StringItem index="1" value="ARAM"/>
+            <StringItem index="2" value="Teamfight Tactics"/>
+            <StringItem index="3" value="Ultimate Spellbook"/>
+            <StringItem index="4" value="URF"/>
+            <StringItem index="5" value="Nexus Blitz"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbGameModeSelectActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="350" y="420" width="150" height="28"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="cmbChampionSelect">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Corbel" size="12" style="0"/>
+        </Property>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="153">
+            <StringItem index="0" value="Aatrox"/>
+            <StringItem index="1" value="Ahri"/>
+            <StringItem index="2" value="Akali"/>
+            <StringItem index="3" value="Alistar"/>
+            <StringItem index="4" value="Amumu"/>
+            <StringItem index="5" value="Anivia"/>
+            <StringItem index="6" value="Annie"/>
+            <StringItem index="7" value="Aphelios"/>
+            <StringItem index="8" value="Ashe"/>
+            <StringItem index="9" value="Aurelion Sol"/>
+            <StringItem index="10" value="Azir"/>
+            <StringItem index="11" value="Bard"/>
+            <StringItem index="12" value="Blitzcrank"/>
+            <StringItem index="13" value="Brand"/>
+            <StringItem index="14" value="Braum"/>
+            <StringItem index="15" value="Caitlyn"/>
+            <StringItem index="16" value="Camille"/>
+            <StringItem index="17" value="Cassiopeia"/>
+            <StringItem index="18" value="Cho&apos;Gath"/>
+            <StringItem index="19" value="Corki"/>
+            <StringItem index="20" value="Darius"/>
+            <StringItem index="21" value="Diana"/>
+            <StringItem index="22" value="Dr. Mundo"/>
+            <StringItem index="23" value="Draven"/>
+            <StringItem index="24" value="Ekko"/>
+            <StringItem index="25" value="Elise"/>
+            <StringItem index="26" value="Evelynn"/>
+            <StringItem index="27" value="Ezreal"/>
+            <StringItem index="28" value="Fiddlesticks"/>
+            <StringItem index="29" value="Fiora"/>
+            <StringItem index="30" value="Fizz"/>
+            <StringItem index="31" value="Galio"/>
+            <StringItem index="32" value="Gangplank"/>
+            <StringItem index="33" value="Garen"/>
+            <StringItem index="34" value="Gnar"/>
+            <StringItem index="35" value="Gragas"/>
+            <StringItem index="36" value="Graves"/>
+            <StringItem index="37" value="Hecarim"/>
+            <StringItem index="38" value="Heimerdinger"/>
+            <StringItem index="39" value="Illaoi"/>
+            <StringItem index="40" value="Irelia"/>
+            <StringItem index="41" value="Ivern"/>
+            <StringItem index="42" value="Janna"/>
+            <StringItem index="43" value="Jarvan IV"/>
+            <StringItem index="44" value="Jax"/>
+            <StringItem index="45" value="Jayce"/>
+            <StringItem index="46" value="Jhin"/>
+            <StringItem index="47" value="Jinx"/>
+            <StringItem index="48" value="Kai&apos;Sa"/>
+            <StringItem index="49" value="Kalista"/>
+            <StringItem index="50" value="Karma"/>
+            <StringItem index="51" value="Karthus"/>
+            <StringItem index="52" value="Kassadin"/>
+            <StringItem index="53" value="Katarina"/>
+            <StringItem index="54" value="Kayle"/>
+            <StringItem index="55" value="Kayn"/>
+            <StringItem index="56" value="Kennen"/>
+            <StringItem index="57" value="Kha&apos;Zix"/>
+            <StringItem index="58" value="Kindred"/>
+            <StringItem index="59" value="Kled"/>
+            <StringItem index="60" value="Kog&apos;Maw"/>
+            <StringItem index="61" value="LeBlanc"/>
+            <StringItem index="62" value="Lee Sin"/>
+            <StringItem index="63" value="Leona"/>
+            <StringItem index="64" value="Lillia"/>
+            <StringItem index="65" value="Lissandra"/>
+            <StringItem index="66" value="Lucian"/>
+            <StringItem index="67" value="Lulu"/>
+            <StringItem index="68" value="Lux"/>
+            <StringItem index="69" value="Malphite"/>
+            <StringItem index="70" value="Malzahar"/>
+            <StringItem index="71" value="Maokai"/>
+            <StringItem index="72" value="Master Yi"/>
+            <StringItem index="73" value="Miss Fortune"/>
+            <StringItem index="74" value="Mordekaiser"/>
+            <StringItem index="75" value="Morgana"/>
+            <StringItem index="76" value="Nami"/>
+            <StringItem index="77" value="Nasus"/>
+            <StringItem index="78" value="Nautilus"/>
+            <StringItem index="79" value="Neeko"/>
+            <StringItem index="80" value="Nidalee"/>
+            <StringItem index="81" value="Nocturne"/>
+            <StringItem index="82" value="Nunu and Willump"/>
+            <StringItem index="83" value="Olaf"/>
+            <StringItem index="84" value="Orianna"/>
+            <StringItem index="85" value="Ornn"/>
+            <StringItem index="86" value="Pantheon"/>
+            <StringItem index="87" value="Poppy"/>
+            <StringItem index="88" value="Pyke"/>
+            <StringItem index="89" value="Qiyana"/>
+            <StringItem index="90" value="Quinn"/>
+            <StringItem index="91" value="Rakan"/>
+            <StringItem index="92" value="Rammus"/>
+            <StringItem index="93" value="Rek&apos;Sai"/>
+            <StringItem index="94" value="Rell"/>
+            <StringItem index="95" value="Renekton"/>
+            <StringItem index="96" value="Rengar"/>
+            <StringItem index="97" value="Riven"/>
+            <StringItem index="98" value="Rumble"/>
+            <StringItem index="99" value="Ryze"/>
+            <StringItem index="100" value="Samira"/>
+            <StringItem index="101" value="Sejuani"/>
+            <StringItem index="102" value="Senna"/>
+            <StringItem index="103" value="Seraphine"/>
+            <StringItem index="104" value="Sett"/>
+            <StringItem index="105" value="Shaco"/>
+            <StringItem index="106" value="Shen"/>
+            <StringItem index="107" value="Shyvana"/>
+            <StringItem index="108" value="Singed"/>
+            <StringItem index="109" value="Sion"/>
+            <StringItem index="110" value="Sivir"/>
+            <StringItem index="111" value="Skarner"/>
+            <StringItem index="112" value="Sona"/>
+            <StringItem index="113" value="Soraka"/>
+            <StringItem index="114" value="Swain"/>
+            <StringItem index="115" value="Sylas"/>
+            <StringItem index="116" value="Syndra"/>
+            <StringItem index="117" value="Tahm Kench"/>
+            <StringItem index="118" value="Taliyah"/>
+            <StringItem index="119" value="Talon"/>
+            <StringItem index="120" value="Taric"/>
+            <StringItem index="121" value="Teemo"/>
+            <StringItem index="122" value="Thresh"/>
+            <StringItem index="123" value="Tristana"/>
+            <StringItem index="124" value="Trundle"/>
+            <StringItem index="125" value="Tryndamere"/>
+            <StringItem index="126" value="Twisted Fate"/>
+            <StringItem index="127" value="Twitch"/>
+            <StringItem index="128" value="Udyr"/>
+            <StringItem index="129" value="Urgot"/>
+            <StringItem index="130" value="Varus"/>
+            <StringItem index="131" value="Vayne"/>
+            <StringItem index="132" value="Veigar"/>
+            <StringItem index="133" value="Vel&apos;Koz"/>
+            <StringItem index="134" value="Vi"/>
+            <StringItem index="135" value="Viktor"/>
+            <StringItem index="136" value="Vladimir"/>
+            <StringItem index="137" value="Volibear"/>
+            <StringItem index="138" value="Warwick"/>
+            <StringItem index="139" value="Wukong"/>
+            <StringItem index="140" value="Xayah"/>
+            <StringItem index="141" value="Xerath"/>
+            <StringItem index="142" value="Xin Zhao"/>
+            <StringItem index="143" value="Yasuo"/>
+            <StringItem index="144" value="Yone"/>
+            <StringItem index="145" value="Yorick"/>
+            <StringItem index="146" value="Yuumi"/>
+            <StringItem index="147" value="Zac"/>
+            <StringItem index="148" value="Zed"/>
+            <StringItem index="149" value="Ziggs"/>
+            <StringItem index="150" value="Zilean"/>
+            <StringItem index="151" value="Zoe"/>
+            <StringItem index="152" value="Zyra"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbChampionSelectActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="350" y="420" width="100" height="28"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="cmbSkinLineSelect">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Corbel" size="12" style="0"/>
+        </Property>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="112">
+            <StringItem index="0" value="Academy"/>
+            <StringItem index="1" value="Arcade"/>
+            <StringItem index="2" value="Arcana"/>
+            <StringItem index="3" value="Arcane"/>
+            <StringItem index="4" value="Arcanist"/>
+            <StringItem index="5" value="Arclight"/>
+            <StringItem index="6" value="Arctic Ops"/>
+            <StringItem index="7" value="Astronaut"/>
+            <StringItem index="8" value="Battle Academia"/>
+            <StringItem index="9" value="Battle Boss"/>
+            <StringItem index="10" value="Battle Queen"/>
+            <StringItem index="11" value="Battlecast"/>
+            <StringItem index="12" value="Beast Hunter"/>
+            <StringItem index="13" value="Bee"/>
+            <StringItem index="14" value="Bewitching"/>
+            <StringItem index="15" value="Blackfrost"/>
+            <StringItem index="16" value="Blood Moon"/>
+            <StringItem index="17" value="Cafe Cuties"/>
+            <StringItem index="18" value="Challenger"/>
+            <StringItem index="19" value="Championship"/>
+            <StringItem index="20" value="Commando"/>
+            <StringItem index="21" value="Conqueror"/>
+            <StringItem index="22" value="Cottontail"/>
+            <StringItem index="23" value="Coven"/>
+            <StringItem index="24" value="Crime City"/>
+            <StringItem index="25" value="Crimson Elite"/>
+            <StringItem index="26" value="Crystal Rose"/>
+            <StringItem index="27" value="Cyber Pop"/>
+            <StringItem index="28" value="Dark Star"/>
+            <StringItem index="29" value="Dawnbringer"/>
+            <StringItem index="30" value="Death Blossom"/>
+            <StringItem index="31" value="Death Sworn"/>
+            <StringItem index="32" value="Debonair"/>
+            <StringItem index="33" value="Definitely Not"/>
+            <StringItem index="34" value="Demacia Vice"/>
+            <StringItem index="35" value="Dragonslayer"/>
+            <StringItem index="36" value="Dragon Trainer"/>
+            <StringItem index="37" value="Dreadknight"/>
+            <StringItem index="38" value="Dreadnova"/>
+            <StringItem index="39" value="DWG"/>
+            <StringItem index="40" value="Elderwood"/>
+            <StringItem index="41" value="Eternum"/>
+            <StringItem index="42" value="Firecracker"/>
+            <StringItem index="43" value="Fnatic"/>
+            <StringItem index="44" value="Forsaken"/>
+            <StringItem index="45" value="FPX"/>
+            <StringItem index="46" value="Freljord"/>
+            <StringItem index="47" value="Full Metal"/>
+            <StringItem index="48" value="Galactic"/>
+            <StringItem index="49" value="God-King"/>
+            <StringItem index="50" value="Guardian of the Sands"/>
+            <StringItem index="51" value="Headhunter"/>
+            <StringItem index="52" value="Heartseeker"/>
+            <StringItem index="53" value="Hextech"/>
+            <StringItem index="54" value="High Noon"/>
+            <StringItem index="55" value="iG"/>
+            <StringItem index="56" value="Infernal"/>
+            <StringItem index="57" value="Justicar"/>
+            <StringItem index="58" value="K/DA"/>
+            <StringItem index="59" value="Lancer"/>
+            <StringItem index="60" value="Lunar"/>
+            <StringItem index="61" value="Mad Scientist"/>
+            <StringItem index="62" value="Marauder"/>
+            <StringItem index="63" value="Mecha"/>
+            <StringItem index="64" value="Nightbringer"/>
+            <StringItem index="65" value="Odyssey"/>
+            <StringItem index="66" value="Old God"/>
+            <StringItem index="67" value="Omega Squad"/>
+            <StringItem index="68" value="Order of the Lotus"/>
+            <StringItem index="69" value="Pajama Guardian"/>
+            <StringItem index="70" value="Papercraft"/>
+            <StringItem index="71" value="PAX"/>
+            <StringItem index="72" value="Pentakill"/>
+            <StringItem index="73" value="Pharaoh"/>
+            <StringItem index="74" value="Piltover Customs"/>
+            <StringItem index="75" value="Pool Party"/>
+            <StringItem index="76" value="Praetorian"/>
+            <StringItem index="77" value="Prehistoric"/>
+            <StringItem index="78" value="Program"/>
+            <StringItem index="79" value="PROJECT"/>
+            <StringItem index="80" value="PsyOps"/>
+            <StringItem index="81" value="Pulsefire"/>
+            <StringItem index="82" value="Resistance"/>
+            <StringItem index="83" value="Riot"/>
+            <StringItem index="84" value="Ruined"/>
+            <StringItem index="85" value="Secret Agent"/>
+            <StringItem index="86" value="Sentinel"/>
+            <StringItem index="87" value="Shan Hai Scrolls"/>
+            <StringItem index="88" value="SKT T1"/>
+            <StringItem index="89" value="Snow Day"/>
+            <StringItem index="90" value="Space Groove"/>
+            <StringItem index="91" value="Spirit Blossom"/>
+            <StringItem index="92" value="SSG"/>
+            <StringItem index="93" value="SSW"/>
+            <StringItem index="94" value="Star Guardian"/>
+            <StringItem index="95" value="Steel Legion"/>
+            <StringItem index="96" value="Sugar Rush"/>
+            <StringItem index="97" value="Super Galaxy"/>
+            <StringItem index="98" value="Tango"/>
+            <StringItem index="99" value="Thunder Lord"/>
+            <StringItem index="100" value="TPA"/>
+            <StringItem index="101" value="Traditional"/>
+            <StringItem index="102" value="True Damage"/>
+            <StringItem index="103" value="Vandal"/>
+            <StringItem index="104" value="Victorious"/>
+            <StringItem index="105" value="Warden"/>
+            <StringItem index="106" value="Warring Kingdoms"/>
+            <StringItem index="107" value="Winter Wonder"/>
+            <StringItem index="108" value="Withered Rose"/>
+            <StringItem index="109" value="Woad"/>
+            <StringItem index="110" value="Worldbreaker"/>
+            <StringItem index="111" value="Zombie"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbSkinLineSelectActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="350" y="420" width="190" height="28"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="cmbItemSelect">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Corbel" size="12" style="0"/>
+        </Property>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="199">
+            <StringItem index="0" value="Abyssal Mask"/>
+            <StringItem index="1" value="Aegis of the Legion"/>
+            <StringItem index="2" value="Aether Wisp"/>
+            <StringItem index="3" value="Amplifying Tome"/>
+            <StringItem index="4" value="Anathemas Chains"/>
+            <StringItem index="5" value="Archangels Staff"/>
+            <StringItem index="6" value="Ardent Censer"/>
+            <StringItem index="7" value="B. F. Sword"/>
+            <StringItem index="8" value="Bamis Cinder"/>
+            <StringItem index="9" value="Bandleglass Mirror"/>
+            <StringItem index="10" value="Banshees Veil"/>
+            <StringItem index="11" value="Berserkers Greaves"/>
+            <StringItem index="12" value="Black Cleaver"/>
+            <StringItem index="13" value="Black Mist Scythe"/>
+            <StringItem index="14" value="Blade of The Ruined King"/>
+            <StringItem index="15" value="Blasting Wand"/>
+            <StringItem index="16" value="Blighting Jewel"/>
+            <StringItem index="17" value="Bloodthirster"/>
+            <StringItem index="18" value="Boots"/>
+            <StringItem index="19" value="Boots of Swiftness"/>
+            <StringItem index="20" value="Bramble Vest"/>
+            <StringItem index="21" value="Broken Stopwatch"/>
+            <StringItem index="22" value="Broken Stopwatch"/>
+            <StringItem index="23" value="Bulwark of the Mountain"/>
+            <StringItem index="24" value="Caulfields Warhammer"/>
+            <StringItem index="25" value="Chain Vest"/>
+            <StringItem index="26" value="Chempunk Chainsword"/>
+            <StringItem index="27" value="Chemtech Putrifier"/>
+            <StringItem index="28" value="Cloak of Agility"/>
+            <StringItem index="29" value="Cloth Armor"/>
+            <StringItem index="30" value="Commencing Stopwatch"/>
+            <StringItem index="31" value="Control Ward"/>
+            <StringItem index="32" value="Corrupting Potion"/>
+            <StringItem index="33" value="Cosmic Drive"/>
+            <StringItem index="34" value="Crystalline Bracer"/>
+            <StringItem index="35" value="Cull"/>
+            <StringItem index="36" value="Dagger"/>
+            <StringItem index="37" value="Dark Seal"/>
+            <StringItem index="38" value="Dead Mans Plate"/>
+            <StringItem index="39" value="Deaths Dance"/>
+            <StringItem index="40" value="Demonic Embrace"/>
+            <StringItem index="41" value="Divine Sunderer"/>
+            <StringItem index="42" value="Dorans Blade"/>
+            <StringItem index="43" value="Dorans Ring"/>
+            <StringItem index="44" value="Dorans Shield"/>
+            <StringItem index="45" value="Duskblade of Draktharr"/>
+            <StringItem index="46" value="Eclipse"/>
+            <StringItem index="47" value="Edge of Night"/>
+            <StringItem index="48" value="Elixir of Iron"/>
+            <StringItem index="49" value="Elixir of Sorcery"/>
+            <StringItem index="50" value="Elixir of Wrath"/>
+            <StringItem index="51" value="Emberknife"/>
+            <StringItem index="52" value="Essence Reaver"/>
+            <StringItem index="53" value="Everfrost"/>
+            <StringItem index="54" value="Executioners Calling"/>
+            <StringItem index="55" value="Eye of the Herald"/>
+            <StringItem index="56" value="Faerie Charm"/>
+            <StringItem index="57" value="Farsight Alteration"/>
+            <StringItem index="58" value="Fiendish Codex"/>
+            <StringItem index="59" value="Forbidden Idol"/>
+            <StringItem index="60" value="Force of Nature"/>
+            <StringItem index="61" value="Frostfang"/>
+            <StringItem index="62" value="Frostfire Gauntlet"/>
+            <StringItem index="63" value="Frozen Heart"/>
+            <StringItem index="64" value="Galeforce"/>
+            <StringItem index="65" value="Gargoyle Stoneplate"/>
+            <StringItem index="66" value="Giants Belt"/>
+            <StringItem index="67" value="Glacial Buckler"/>
+            <StringItem index="68" value="Goredrinker"/>
+            <StringItem index="69" value="Guardian Angel"/>
+            <StringItem index="70" value="Guardians Blade"/>
+            <StringItem index="71" value="Guardians Hammer"/>
+            <StringItem index="72" value="Guardians Horn"/>
+            <StringItem index="73" value="Guardians Orb"/>
+            <StringItem index="74" value="Guinsoos Rageblade"/>
+            <StringItem index="75" value="Hailblade"/>
+            <StringItem index="76" value="Harrowing Crescent"/>
+            <StringItem index="77" value="Health Potion"/>
+            <StringItem index="78" value="Hearthbound Axe"/>
+            <StringItem index="79" value="Hexdrinker"/>
+            <StringItem index="80" value="Hextech Alternator"/>
+            <StringItem index="81" value="Hextech Rocketbelt"/>
+            <StringItem index="82" value="Horizon Focus"/>
+            <StringItem index="83" value="Hullbreaker"/>
+            <StringItem index="84" value="Immortal Shieldbow"/>
+            <StringItem index="85" value="Imperial Mandate"/>
+            <StringItem index="86" value="Infinity Edge"/>
+            <StringItem index="87" value="Ionian Boots of Lucidity"/>
+            <StringItem index="88" value="Ironspike Whip"/>
+            <StringItem index="89" value="Kalistas Black Spear"/>
+            <StringItem index="90" value="Kalistas Black Spear"/>
+            <StringItem index="91" value="Kindlegem"/>
+            <StringItem index="92" value="Kircheis Shard"/>
+            <StringItem index="93" value="Knights Vow"/>
+            <StringItem index="94" value="Kraken Slayer"/>
+            <StringItem index="95" value="Last Whisper"/>
+            <StringItem index="96" value="Leeching Leer"/>
+            <StringItem index="97" value="Liandrys Anguish"/>
+            <StringItem index="98" value="Lich Bane"/>
+            <StringItem index="99" value="Locket of the Iron Solari"/>
+            <StringItem index="100" value="Long Sword"/>
+            <StringItem index="101" value="Lord Dominiks Regards"/>
+            <StringItem index="102" value="Lost Chapter"/>
+            <StringItem index="103" value="Ludens Tempest"/>
+            <StringItem index="104" value="Manamune"/>
+            <StringItem index="105" value="Maw of Malmortius"/>
+            <StringItem index="106" value="Mejais Soulstealer"/>
+            <StringItem index="107" value="Mercurial Scimitar"/>
+            <StringItem index="108" value="Mercurys Treads"/>
+            <StringItem index="109" value="Mikaels Blessing"/>
+            <StringItem index="110" value="Minion Dematerializer"/>
+            <StringItem index="111" value="Mobility Boots"/>
+            <StringItem index="112" value="Moonstone Renewer"/>
+            <StringItem index="113" value="Morellonomicon"/>
+            <StringItem index="114" value="Mortal Reminder"/>
+            <StringItem index="115" value="Muramana"/>
+            <StringItem index="116" value="Nashors Tooth"/>
+            <StringItem index="117" value="Navori Quickblades"/>
+            <StringItem index="118" value="Needlessly Large Rod"/>
+            <StringItem index="119" value="Negatron Cloak"/>
+            <StringItem index="120" value="Night Harvester"/>
+            <StringItem index="121" value="Noonquiver"/>
+            <StringItem index="122" value="Null-Magic Mantle"/>
+            <StringItem index="123" value="Oblivion Orb"/>
+            <StringItem index="124" value="Oracle Lens"/>
+            <StringItem index="125" value="Pauldrons of Whiterock"/>
+            <StringItem index="126" value="Perfectly Timed Stopwatch"/>
+            <StringItem index="127" value="Phage"/>
+            <StringItem index="128" value="Phantom Dancer"/>
+            <StringItem index="129" value="Pickaxe"/>
+            <StringItem index="130" value="Plated Steelcaps"/>
+            <StringItem index="131" value="Poro-Snax"/>
+            <StringItem index="132" value="Prowlers Claw"/>
+            <StringItem index="133" value="Quicksilver Sash"/>
+            <StringItem index="134" value="Rabadons Deathcap"/>
+            <StringItem index="135" value="Rageknife"/>
+            <StringItem index="136" value="Randuins Omen"/>
+            <StringItem index="137" value="Rapid Firecannon"/>
+            <StringItem index="138" value="Ravenous Hydra"/>
+            <StringItem index="139" value="Recurve Bow"/>
+            <StringItem index="140" value="Redemption"/>
+            <StringItem index="141" value="Refillable Potion"/>
+            <StringItem index="142" value="Rejuvenation Bead"/>
+            <StringItem index="143" value="Relic Shield"/>
+            <StringItem index="144" value="Riftmaker"/>
+            <StringItem index="145" value="Ruby Crystal"/>
+            <StringItem index="146" value="Runaans Hurricane"/>
+            <StringItem index="147" value="Runesteel Spaulders"/>
+            <StringItem index="148" value="Rylais Crystal Scepter"/>
+            <StringItem index="149" value="Sapphire Crystal"/>
+            <StringItem index="150" value="Scarecrow Effigy"/>
+            <StringItem index="151" value="Seekers Armguard"/>
+            <StringItem index="152" value="Seraphs Embrace"/>
+            <StringItem index="153" value="Serpents Fang"/>
+            <StringItem index="154" value="Serrated Dirk"/>
+            <StringItem index="155" value="Seryldas Grudge"/>
+            <StringItem index="156" value="Shard of True Ice"/>
+            <StringItem index="157" value="Sheen"/>
+            <StringItem index="158" value="Shurelyas Battlesong"/>
+            <StringItem index="159" value="Silvermere Dawn"/>
+            <StringItem index="160" value="Slightly Magical Footwear"/>
+            <StringItem index="161" value="Sorcerers Shoes"/>
+            <StringItem index="162" value="Spectral Sickle"/>
+            <StringItem index="163" value="Spectres Cowl"/>
+            <StringItem index="164" value="Spellthiefs Edge"/>
+            <StringItem index="165" value="Spirit Visage"/>
+            <StringItem index="166" value="Staff of Flowing Water"/>
+            <StringItem index="167" value="Stealth Ward"/>
+            <StringItem index="168" value="Steel Shoulderguards"/>
+            <StringItem index="169" value="Steraks Gage"/>
+            <StringItem index="170" value="Stopwatch"/>
+            <StringItem index="171" value="Stormrazor"/>
+            <StringItem index="172" value="Stridebreaker"/>
+            <StringItem index="173" value="Sunfire Aegis"/>
+            <StringItem index="174" value="Targons Buckler"/>
+            <StringItem index="175" value="Tear of the Goddess"/>
+            <StringItem index="176" value="The Collector"/>
+            <StringItem index="177" value="The Golden Spatula"/>
+            <StringItem index="178" value="Thornmail"/>
+            <StringItem index="179" value="Tiamat"/>
+            <StringItem index="180" value="Titanic Hydra"/>
+            <StringItem index="181" value="Total Biscuit of Everlasting Will"/>
+            <StringItem index="182" value="Trinity Force"/>
+            <StringItem index="183" value="Turbo Chemtank"/>
+            <StringItem index="184" value="Umbral Glaive"/>
+            <StringItem index="185" value="Vampiric Scepter"/>
+            <StringItem index="186" value="Verdant Barrier"/>
+            <StringItem index="187" value="Vigilant Wardstone"/>
+            <StringItem index="188" value="Void Staff"/>
+            <StringItem index="189" value="Wardens Mail"/>
+            <StringItem index="190" value="Warmogs Armor"/>
+            <StringItem index="191" value="Watchful Wardstone"/>
+            <StringItem index="192" value="Winged Moonplate"/>
+            <StringItem index="193" value="Wits End"/>
+            <StringItem index="194" value="Youmuus Ghostblade"/>
+            <StringItem index="195" value="Your Cut"/>
+            <StringItem index="196" value="Zeal"/>
+            <StringItem index="197" value="Zekes Convergence"/>
+            <StringItem index="198" value="Zhonyas Hourglass"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cmbItemSelectActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="350" y="420" width="180" height="28"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblResultsHead">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Corbel" size="14" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="SHOWING RESULTS FOR:"/>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="20" y="20" width="180" height="14"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblResults">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Corbel" size="14" style="0"/>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="220" y="20" width="470" height="14"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="scrResults">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="20" y="50" width="670" height="580"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="txtResults">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Consolas" size="12" style="0"/>
+            </Property>
+            <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+              <Color id="Text Cursor"/>
+            </Property>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="btnResultsSave">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Corbel" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Save as File"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnResultsSaveActionPerformed"/>
+      </Events>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="600" y="643" width="100" height="30"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnBack">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Corbel" size="12" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Back"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBackActionPerformed"/>
+      </Events>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="10" y="643" width="70" height="30"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+    <Component class="javax.swing.JLabel" name="imgBackground">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="2" name="C:\Users\alvis\Videos\aa\7-75812_league-of-legends-preseason-2020 (2) - Copy.jpg"/>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+          <AbsoluteConstraints x="0" y="0" width="720" height="720"/>
+        </Constraint>
+      </Constraints>
+    </Component>
+  </SubComponents>
+</Form>
