@@ -1,6 +1,6 @@
-<p align="center"> 
+<!-- <p align="center"> 
   <img src="readme/header.png" alt="Logo">
-</p>
+</p> -->
 
 <p align="center"> 
   <img src="readme/demo.gif" alt="Demo GIF">
