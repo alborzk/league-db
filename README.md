@@ -2,11 +2,8 @@
   <img src="readme/header.png" alt="Logo">
 </p>
 
-<h3 align="center"> COMP 3380 - Databases Concepts and Usage  </h3>
-<h5 align="center"> Final Project</h5>
-
 <p align="center"> 
-  <img src="gif/pacman_game.gif" alt="Animated gif pacman game" height="282px" width="637">
+  <img src="readme/demo.gif" alt="Demo GIF">
 </p>
 
 <!-- ABOUT THE PROJECT -->
@@ -17,6 +14,7 @@
   
   LeagueDB is built for a Windows operating system with Java 11 or later installed.
 </p>
+
 
 <!-- GETTING STARTED -->
 <h2 id="getting-started"> 📚 Getting Started</h2>
