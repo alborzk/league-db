@@ -2,7 +2,6 @@
   <img src="readme/header.png" alt="Logo">
 </p>
 
-<h1 align="center"> LeagueDB </h1>
 <h3 align="center"> COMP 3380 - Databases Concepts and Usage  </h3>
 <h5 align="center"> Final Project</h5>
 
