@@ -19,7 +19,7 @@
 
 
 <!-- GETTING STARTED -->
-<h2 id="getting-started"> 📚 Getting Started</h2>
+<h2 id="getting-started"> 👟 Getting Started</h2>
 
 <p>To launch LeagueDB, simply open the "launcher.exe" file in the project folder.</p>
 
@@ -28,6 +28,8 @@
 
 <!-- TABLES -->
 <h2 id="tables"> 📘 Tables</h2>
+
+LeagueDB can return game data for any of the following tables:
 
 - Champions
 - Abilities
@@ -41,6 +43,8 @@
 
 <!-- QUERIES -->
 <h2 id="getting-started"> 📗 Queries</h2>
+
+LeagueDB can return results for any of the following queries:
 
 - Most popular build for a given champion
 - Most well-rounded champions within a class
@@ -56,7 +60,7 @@
 - Relevant ally/enemy tips given a champion
 
 <!-- CREDITS -->
-<h2 id="credits"> 🧑‍🤝‍🧑 Credits</h2>
+<h2 id="credits"> 📝 Credits</h2>
 
 - Alborz Khakbazan
 
